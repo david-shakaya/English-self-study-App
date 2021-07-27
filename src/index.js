@@ -33,13 +33,14 @@ function nextWord() {
     })
 
     curentId = curentElem
-    screen.innerHTML = `<p>${worlds[rl].en}</p>`
+    screen2.innerHTML = ''
+    screen.innerHTML = `<h2>${worlds[rl].en}</h2>`
     btnShowAnswer.disabled = false;
     
     }
 
 function showAnswer() {
-    screen2.innerHTML = `<p>${curentId.uk}</p>`
+    screen2.innerHTML = `<h2>${curentId.uk}</h2>`
     btnShowAnswer.setAttribute("disabled", "disabled");
     
 }
