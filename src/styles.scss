@@ -14,8 +14,48 @@ body {
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+main {
+  padding-top: 20px;
+  padding-bottom: 40px;
 
-.container{
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  background-color: #252525;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  color: #f7f7f7;
+  font-size: 24px;
+}
+
+.wrapper {
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 70px;
+  }
+}
+.container {
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 15px;
@@ -23,16 +63,47 @@ body {
 }
 
 .screen {
-  height: 100px;
-    background:#f7f7f7;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  min-height: 100px;
+  background: #f7f7f7;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #252525;
 }
 .screen2 {
-  height: 100px;
-    background:#f7f7f7;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  min-height: 100px;
+  background: #f7f7f7;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #252525;
+}
+
+.screen-next-word {
+  font-family: Roboto, sans-serif;
+  color: #f7f7f7;
+  font-size: 24px;
+}
+
+.screen-answer {
+  font-family: Roboto, sans-serif;
+  color: #f7f7f7;
+  font-size: 24px;
+}
+
+$blue: #3498db;
+button {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  border-color: $blue;
+  color: #fff;
+  background-color: $blue;
+
+  &:hover {
+    box-shadow: 0 0 3px 0 #3498db inset, 0 0 10px 0px #3498db;
+    background: #0f3046;
+  }
 }
